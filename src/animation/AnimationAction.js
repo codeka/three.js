@@ -136,7 +136,7 @@ AnimationAction.prototype = {
 	setLoop: function( mode, repetitions ) {
 
 		this.loop = mode;
-		this.repetitions = repetitions;
+		this.repetitions = repetitions === undefined ? Infinity : repetitions;
 
 		return this;
 
